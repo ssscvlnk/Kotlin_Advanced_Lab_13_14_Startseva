@@ -57,6 +57,26 @@ class Quiz : ProgressPrintable {
         var total: Int = 10
         var answered: Int = 10
     }
+    fun printQuiz() {
+        question1.let {
+            println(it.questionText)
+            println(it.answer)
+            println(it.difficulty)
+        }
+        println()
+        question2.let {
+            println(it.questionText)
+            println(it.answer)
+            println(it.difficulty)
+        }
+        println()
+        question3.let {
+            println(it.questionText)
+            println(it.answer)
+            println(it.difficulty)
+        }
+        println()
+    }
 }
 fun main() {
 
@@ -65,5 +85,6 @@ fun main() {
 //    println(question3.answer)
 //    println(question1.toString())
 //    println(Quiz.progressText)
-    Quiz().printProgressBar()
+//    Quiz().printProgressBar()
+    Quiz().apply { printQuiz() }
 }
