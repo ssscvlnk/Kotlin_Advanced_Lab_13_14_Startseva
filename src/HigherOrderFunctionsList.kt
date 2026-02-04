@@ -59,4 +59,11 @@ fun main() {
     fullMenu.forEach {
         println(it)
     }
+    val softBakedMenu = cookies.filter {
+        it.softBaked
+    }
+    println("Мягкое печенье:")
+    softBakedMenu.forEach {
+        println("${it.name} - ${it.price}")
+    }
 }
