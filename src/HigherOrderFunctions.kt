@@ -33,12 +33,12 @@ fun subtract(a: Int, b: Int): Int{
 fun multiply(a: Int, b: Int): Int{
     return a * b
 }
-//fun displayMessage(mes: () -> Unit) {
-//    mes()
-//}
-//fun morning() {
-//    println("Good Morning")
-//}
-//fun evening() {
-//    println("Good Evening")
-//}
+fun displayMessage(mes: () -> Unit) {
+    mes()
+}
+fun morning() {
+    println("Good Morning")
+}
+fun evening() {
+    println("Good Evening")
+}
